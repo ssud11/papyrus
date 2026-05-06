@@ -13,6 +13,9 @@ Iron-gall brown ink on aged vellum. Warmer and dustier — easier on the eyes fo
 ### Papyrus Noir
 Pure-black editor with warm chrome panels. Built for HDR/Dolby Vision and QD-OLED displays — true `#000000` background so OLED pixels switch off cleanly.
 
+### Papyrus Lamplight
+Warm amber ink on near-black. Candlelight on old paper — cozy for long sessions in low light.
+
 ## Install
 
 Search **"Papyrus"** in the VS Code Extensions panel, or install via command palette:

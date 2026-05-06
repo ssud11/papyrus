@@ -36,6 +36,11 @@
         "label": "Papyrus Noir",
         "uiTheme": "vs-dark",
         "path": "./themes/papyrus-mesh-color-theme.json"
+      },
+      {
+        "label": "Papyrus Lamplight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/papyrus-lamp-color-theme.json"
       }
     ]
   }
