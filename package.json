@@ -1,0 +1,42 @@
+{
+  "name": "papyrus",
+  "displayName": "Papyrus",
+  "description": "Metallic-ink-on-paper themes — Inkwell (light), Foxed Vellum (light), and Noir (dark). QD-OLED tuned. Solarized lineage with zero blue/purple fringe.",
+  "version": "2.0.0",
+  "publisher": "SS-inkwright",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssud11/papyrus"
+  },
+  "license": "MIT",
+  "keywords": ["theme", "color theme", "solarized", "light", "dark", "papyrus", "warm"],
+  "galleryBanner": {
+    "color": "#EAE0BC",
+    "theme": "light"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Papyrus Inkwell",
+        "uiTheme": "vs",
+        "path": "./themes/papyrus-inkwell-color-theme.json"
+      },
+      {
+        "label": "Papyrus Foxed Vellum",
+        "uiTheme": "vs",
+        "path": "./themes/papyrus-vellum-color-theme.json"
+      },
+      {
+        "label": "Papyrus Noir",
+        "uiTheme": "vs-dark",
+        "path": "./themes/papyrus-mesh-color-theme.json"
+      }
+    ]
+  }
+}
