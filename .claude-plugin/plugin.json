@@ -1,0 +1,12 @@
+{
+  "name": "papyrus",
+  "displayName": "Papyrus",
+  "version": "1.0.0",
+  "description": "Four Claude Code TUI themes: Inkwell, Foxed Vellum, Noir, Lamplight — metallic ink on paper.",
+  "author": {
+    "name": "Saadman Sakib"
+  },
+  "experimental": {
+    "themes": "./tui/"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_sync": "design-current · 2026-07-01 · userMessageBackground/subagent/rainbow pending Design pass",
+  "name": "Papyrus Foxed Vellum",
+  "base": "light",
+  "overrides": {
+
+    "claude":             "#2F5648",
+    "claudeShimmer":      "#244C46",
+    "text":               "#2A2218",
+    "inverseText":        "#F6EDD4",
+    "inactive":           "#7A6E54",
+    "inactiveShimmer":    "#A89A78",
+    "subtle":             "#D8CCA8",
+    "suggestion":         "#8E7C50",
+    "permission":         "#6A3A14",
+    "permissionShimmer":  "#9A7822",
+    "remember":           "#A2381A",
+
+    "success":            "#5E7252",
+    "error":              "#7A2A18",
+    "warning":            "#8A5818",
+    "warningShimmer":     "#9A7822",
+    "merged":             "#6A3A14",
+
+    "promptBorder":       "#6A3A14",
+    "promptBorderShimmer":"#9A7822",
+    "planMode":           "#244C46",
+    "autoAccept":         "#5E7252",
+    "bashBorder":         "#6A3A14",
+    "ide":                "#2F5E54",
+    "fastMode":           "#9A7822",
+    "fastModeShimmer":    "#8A5818",
+
+    "diffAdded":          "#3A582820",
+    "diffRemoved":        "#7A2A1820",
+    "diffAddedDimmed":    "#3A582810",
+    "diffRemovedDimmed":  "#7A2A1810",
+    "diffAddedWord":      "#3A582840",
+    "diffRemovedWord":    "#7A2A1840",
+
+    "rate_limit_fill":    "#6A3A14",
+    "rate_limit_empty":   "#D8CCA8",
+    "briefLabelYou":      "#7A6E54",
+    "briefLabelClaude":   "#2F5648"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_sync": "design-current · 2026-07-01 · userMessageBackground/subagent/rainbow pending Design pass",
+  "name": "Papyrus Lamplight",
+  "base": "dark",
+  "overrides": {
+
+    "claude":             "#9ACBA8",
+    "claudeShimmer":      "#7FC4B0",
+    "text":               "#E8D8B5",
+    "inverseText":        "#181210",
+    "inactive":           "#9A8868",
+    "inactiveShimmer":    "#5A4E3A",
+    "subtle":             "#352A20",
+    "suggestion":         "#897860",
+    "permission":         "#E8A878",
+    "permissionShimmer":  "#E8B080",
+    "remember":           "#E8A878",
+
+    "success":            "#D4B878",
+    "error":              "#E08068",
+    "warning":            "#E8A878",
+    "warningShimmer":     "#E8B080",
+    "merged":             "#E8A878",
+
+    "promptBorder":       "#E8A878",
+    "promptBorderShimmer":"#E8B080",
+    "planMode":           "#7FC4B0",
+    "autoAccept":         "#D4B878",
+    "bashBorder":         "#E8A878",
+    "ide":                "#9ACBA8",
+    "fastMode":           "#E8B080",
+    "fastModeShimmer":    "#E8A878",
+
+    "diffAdded":          "#9ACBA820",
+    "diffRemoved":        "#E0806820",
+    "diffAddedDimmed":    "#9ACBA810",
+    "diffRemovedDimmed":  "#E0806810",
+    "diffAddedWord":      "#9ACBA840",
+    "diffRemovedWord":    "#E0806840",
+
+    "rate_limit_fill":    "#E8A878",
+    "rate_limit_empty":   "#352A20",
+    "briefLabelYou":      "#9A8868",
+    "briefLabelClaude":   "#9ACBA8"
+  }
+}

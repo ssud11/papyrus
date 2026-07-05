@@ -1,0 +1,46 @@
+{
+  "_sync": "design-current · 2026-07-01 · userMessageBackground/subagent/rainbow pending Design pass",
+  "name": "Papyrus Noir",
+  "base": "dark",
+  "overrides": {
+
+    "claude":             "#80B89A",
+    "claudeShimmer":      "#58B0A4",
+    "text":               "#CFC4A8",
+    "inverseText":        "#000000",
+    "inactive":           "#8A7E66",
+    "inactiveShimmer":    "#574E3C",
+    "subtle":             "#2E261A",
+    "suggestion":         "#6E6858",
+    "permission":         "#D89060",
+    "permissionShimmer":  "#DDA065",
+    "remember":           "#DDA065",
+
+    "success":            "#B5C078",
+    "error":              "#D26A55",
+    "warning":            "#D89060",
+    "warningShimmer":     "#DDA065",
+    "merged":             "#DDA065",
+
+    "promptBorder":       "#D89060",
+    "promptBorderShimmer":"#DDA065",
+    "planMode":           "#58B0A4",
+    "autoAccept":         "#B5C078",
+    "bashBorder":         "#DDA065",
+    "ide":                "#80B89A",
+    "fastMode":           "#D4B068",
+    "fastModeShimmer":    "#DDA065",
+
+    "diffAdded":          "#80B89A20",
+    "diffRemoved":        "#D26A5520",
+    "diffAddedDimmed":    "#80B89A10",
+    "diffRemovedDimmed":  "#D26A5510",
+    "diffAddedWord":      "#80B89A40",
+    "diffRemovedWord":    "#D26A5540",
+
+    "rate_limit_fill":    "#D89060",
+    "rate_limit_empty":   "#2E261A",
+    "briefLabelYou":      "#8A7E66",
+    "briefLabelClaude":   "#80B89A"
+  }
+}
