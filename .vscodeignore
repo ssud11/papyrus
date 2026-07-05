@@ -1,0 +1,26 @@
+# Dev/tooling directories — not shipped with the extension
+design-language/**
+themes/Design language/**
+studio/**
+tui/**
+vscode-docs/**
+test/**
+
+# Internal docs + generator — tracked in git, but not shipped in the .vsix
+CHANGELOG.internal.md
+STRUCTURE.md
+papyrus-design-context.md
+papyrus-palettes.js
+
+# CC / tooling / local
+.claude/**
+.claude-plugin/**
+CLAUDE.md
+SESSION-LOG.md
+
+# Build artifacts
+*.vsix
+**/*.zip
+
+# Repo-tooling files vsce bundles by default
+.gitignore

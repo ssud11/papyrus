@@ -1,0 +1,15 @@
+{
+  "$schema": "https://example.com/blueprint.schema.json",
+  "name": "drafting-table",
+  "version": "3.0.0",
+  "enabled": true,
+  "scale": 1.5,
+  "retries": 3,
+  "layers": ["iron", "sepia", "olive"],
+  "ink": {
+    "base": "#13161A",
+    "violet": "#4A38A0",
+    "nullField": null
+  },
+  "tags": ["theme", "blueprint", "cool-exception"]
+}
