@@ -1,12 +1,11 @@
 # Dev/tooling directories — not shipped with the extension
 design-language/**
 themes/Design language/**
-studio/**
 tui/**
 vscode-docs/**
 test/**
 
-# Internal docs + generator — tracked in git, but not shipped in the .vsix
+# Internal docs + generator — present on disk (git-tracked or git-excluded), not shipped in the .vsix
 CHANGELOG.internal.md
 STRUCTURE.md
 papyrus-design-context.md
