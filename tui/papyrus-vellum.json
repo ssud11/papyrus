@@ -1,5 +1,7 @@
 {
-  "_sync": "design-current · 2026-07-01 · userMessageBackground/subagent/rainbow pending Design pass",
+  "_sync": "design-current · 2026-07-07 · full — all families present (v1.1 consolidation pass)",
+  "_philosophy": "Iron-gall on aged, foxed paper: pine #2F5648 is Claude's accent (spinner + label); walnut borders your prompts; rubric red #A2381A marks memory and self. GLOW RULE: shimmers stay in-family (walnut glows gold, pine glows deep teal) — all-warm theme, so gold sheen is native here, not caution-only. Oxblood reserved for errors.",
+  "_statusLine_acct": "The custom 'acct' status-line segment is ambient identity (lowest tier, like token count). Label 'acct:' in dim (#7A6E54), value in text (#2A2218). Place after '⎇ branch', before the '·' opening live metrics. Lowercase, normal weight, no glyph/box. Caution exception: if the account signals prod/shared, promote ONLY the value to amber (#8A5818); default stays dim.",
   "name": "Papyrus Foxed Vellum",
   "base": "light",
   "overrides": {
@@ -16,7 +18,7 @@
     "permissionShimmer":  "#9A7822",
     "remember":           "#A2381A",
 
-    "success":            "#5E7252",
+    "success":            "#4A6B2E",
     "error":              "#7A2A18",
     "warning":            "#8A5818",
     "warningShimmer":     "#9A7822",
@@ -25,9 +27,9 @@
     "promptBorder":       "#6A3A14",
     "promptBorderShimmer":"#9A7822",
     "planMode":           "#244C46",
-    "autoAccept":         "#5E7252",
+    "autoAccept":         "#4A6B2E",
     "bashBorder":         "#6A3A14",
-    "ide":                "#2F5E54",
+    "ide":                "#2F5648",
     "fastMode":           "#9A7822",
     "fastModeShimmer":    "#8A5818",
 
@@ -38,9 +40,40 @@
     "diffAddedWord":      "#3A582840",
     "diffRemovedWord":    "#7A2A1840",
 
+    "userMessageBackground":      "#EEE4C8",
+    "userMessageBackgroundHover": "#E7DCBC",
+    "messageActionsBackground":   "#E2D7AC",
+    "bashMessageBackgroundColor": "#E6E8DC",
+    "memoryBackgroundColor":      "#ECE2D0",
+    "selectionBg":                "#D2C49070",
+
     "rate_limit_fill":    "#6A3A14",
     "rate_limit_empty":   "#D8CCA8",
     "briefLabelYou":      "#7A6E54",
-    "briefLabelClaude":   "#2F5648"
+    "briefLabelClaude":   "#2F5648",
+
+    "red_FOR_SUBAGENTS_ONLY":    "#A2381A",
+    "blue_FOR_SUBAGENTS_ONLY":   "#2C5A72",
+    "green_FOR_SUBAGENTS_ONLY":  "#4E7242",
+    "yellow_FOR_SUBAGENTS_ONLY": "#8A6A14",
+    "purple_FOR_SUBAGENTS_ONLY": "#5A4A8C",
+    "orange_FOR_SUBAGENTS_ONLY": "#9A5A1A",
+    "pink_FOR_SUBAGENTS_ONLY":   "#97386A",
+    "cyan_FOR_SUBAGENTS_ONLY":   "#2F6358",
+
+    "rainbow_red":            "#A2381A",
+    "rainbow_red_shimmer":    "#B8492A",
+    "rainbow_orange":         "#9A5A1A",
+    "rainbow_orange_shimmer": "#B0702A",
+    "rainbow_yellow":         "#8A6A14",
+    "rainbow_yellow_shimmer": "#A4841E",
+    "rainbow_green":          "#4E7242",
+    "rainbow_green_shimmer":  "#5E8A52",
+    "rainbow_blue":           "#2C5A72",
+    "rainbow_blue_shimmer":   "#3C7290",
+    "rainbow_indigo":         "#3E4684",
+    "rainbow_indigo_shimmer": "#525CA0",
+    "rainbow_violet":         "#5A4A8C",
+    "rainbow_violet_shimmer": "#7460A8"
   }
 }

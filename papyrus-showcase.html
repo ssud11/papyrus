@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Papyrus — four themes, one design language</title>
+<meta name="description" content="Metallic ink on warm paper — four themes for VS Code and Claude Code."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --paper:#FCF6E6; --desk:#E9E2CE; --line:#DDD4B2; --lineSoft:#EBE4C8;
+    --ink:#1F2428; --inkSoft:#3A4148; --inkMut:#6E6F62;
+    --walnut:#5C3A1F; --rubric:#A2381A; --violet:#4A38A0; --teal:#157E6A;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--desk);color:var(--ink);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+  .sheet{max-width:960px;margin:0 auto;background:var(--paper);box-shadow:0 30px 90px rgba(70,58,34,.18);}
+  a{color:#285058;} a:hover{color:var(--teal);}
+  .mono{font-family:'JetBrains Mono',monospace;}
+
+  /* hero */
+  header{padding:76px 72px 56px;border-bottom:1px solid var(--line);display:flex;gap:44px;align-items:center;flex-wrap:wrap;}
+  .quill{width:150px;height:150px;flex-shrink:0;}
+  .kicker{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--walnut);font-weight:600;}
+  h1{font-family:'Spectral',serif;font-size:56px;font-weight:600;letter-spacing:-.01em;margin:8px 0 0;line-height:1;}
+  .lede{font-family:'Spectral',serif;font-style:italic;font-size:19px;color:var(--inkSoft);margin-top:14px;max-width:30em;line-height:1.5;}
+  .badges{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap;}
+  .badge{font-size:11px;font-weight:600;color:var(--inkSoft);border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:#F7F1DE;}
+
+  section{padding:52px 72px;border-bottom:1px solid var(--line);}
+  h2{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--walnut);font-weight:600;margin:0 0 26px;}
+  .intro{font-size:15px;line-height:1.65;color:var(--inkSoft);max-width:64ch;margin:-8px 0 30px;}
+  .intro b{color:var(--ink);}
+
+  /* theme cards */
+  .theme{display:grid;grid-template-columns:340px 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:26px;}
+  .tmeta{padding:24px 26px;border-right:1px solid var(--lineSoft);}
+  .tname{font-family:'Spectral',serif;font-size:24px;font-weight:600;}
+  .ttag{font-family:'Spectral',serif;font-style:italic;font-size:13.5px;color:var(--inkMut);margin-top:3px;}
+  .tstory{font-size:13.5px;line-height:1.65;color:var(--inkSoft);margin-top:14px;}
+  .tstory b{color:var(--ink);}
+  .chips{display:flex;gap:6px;margin-top:16px;flex-wrap:wrap;}
+  .chip{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--inkMut);border:1px solid var(--lineSoft);border-radius:999px;padding:3px 9px 3px 4px;}
+  .chip i{width:14px;height:14px;border-radius:50%;display:inline-block;}
+  .spec{margin:0;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.75;padding:20px 24px;overflow-x:auto;}
+  .mode{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:10px;white-space:nowrap;}
+
+  /* rules */
+  .rules{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .rule{border:1px solid var(--line);border-radius:11px;padding:18px 20px;background:#F7F1DE;}
+  .rule h3{font-family:'Spectral',serif;font-size:17px;font-weight:600;margin:0 0 6px;}
+  .rule p{font-size:12.5px;line-height:1.6;color:var(--inkSoft);margin:0;}
+  .rule .mono{font-size:11px;}
+
+  /* tui strip */
+  .tuis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .tui{border-radius:10px;padding:14px;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.7;}
+  .tui .nm{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.65;margin-bottom:6px;}
+
+  footer{padding:40px 72px 56px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+  .ssring{width:52px;height:52px;border-radius:50%;background:#F6EDD4;box-shadow:0 0 0 1px var(--line);flex-shrink:0;}
+  .fnote{font-size:12.5px;color:var(--inkMut);line-height:1.6;}
+  .fnote b{color:var(--ink);}
+
+  @media (max-width:860px){
+    header,section,footer{padding-left:26px;padding-right:26px;}
+    .theme{grid-template-columns:1fr;}
+    .tmeta{border-right:0;border-bottom:1px solid var(--lineSoft);}
+    .rules{grid-template-columns:1fr;}
+    .tuis{grid-template-columns:1fr 1fr;}
+    h1{font-size:40px;}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<header>
+  <svg class="quill" viewBox="0 0 100 100" aria-label="Papyrus quill mark">
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2"/></filter>
+    <g filter="url(#rough)">
+      <path d="M32 66 C34 40 48 16 78 7 C73 28 58 48 40 68 Z" fill="#5C3A1F"/>
+      <path d="M38 62 C46 42 58 24 74 12" stroke="#FCF6E6" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M33 67 L23 84 L37 72 Z" fill="#5C3A1F"/>
+      <path d="M23 85 C33 92 46 85 58 89 C67 92 75 86 83 89" stroke="#5C3A1F" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <div>
+    <h1>Papyrus</h1>
+    <p class="lede">Metallic ink on warm paper — for VS Code <em>and</em> the Claude Code terminal, themed as a single system.</p>
+    <div class="badges">
+      <span class="badge">VS Code + Claude Code TUI</span>
+      <span class="badge">QD-OLED tuned · no subpixel fringe</span>
+      <span class="badge">Contrast budgeted — AA everywhere</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>The four papers</h2>
+  <p class="intro">Every Papyrus theme is ink pressed onto paper — color always encodes <b>what a token is made of</b>. Each theme carries its own redesign idea, and one rule set keeps them a family.</p>
+  <div id="themes"></div>
+</section>
+
+<section>
+  <h2>The rules that hold it together</h2>
+  <div class="rules">
+    <div class="rule"><h3>The function band</h3><p>Functions and decorators sit in the green→teal band (hue ~137–187°) in <b>all four themes</b> — the one hue family the whole system shares.</p></div>
+    <div class="rule"><h3>Structure ≠ damage</h3><p>Class and type colors never share the error hue. Red always means <em>stop</em> — never syntax.</p></div>
+    <div class="rule"><h3>Sacred accents</h3><p>Inkwell's violet and Noir's hot ember mark <span class="mono">self</span>/<span class="mono">this</span> — and Claude's own voice in the terminal. Rare by design; that's what makes them read.</p></div>
+    <div class="rule"><h3>The glow rule</h3><p>TUI shimmers glow <em>in-family</em>. In the cool themes an amber sheen has exactly one meaning: caution.</p></div>
+    <div class="rule"><h3>Contrast is budgeted</h3><p>Content tokens ≥ 4.5:1 · structural ≥ 3.0 · comments and punctuation deepened to ≥ 5.0. Legibility by arithmetic, not vibes.</p></div>
+    <div class="rule"><h3>The warm rule</h3><p>No blue, purple, or magenta in everyday roles — QD-OLED panels show no subpixel fringe. Two documented exceptions: Inkwell's cool palette, and the spectral identity slots (subagents, the ultrathink rainbow).</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Beyond the editor</h2>
+  <p class="intro">The same pigments run through the <b>Claude Code TUI</b> — spinner, prompt borders, diff tints, subagent slots — and a matching <b>status line</b>: model, branch, account, context meter, cost, all in theme ink.</p>
+  <div class="tuis" id="tuis"></div>
+</section>
+
+<footer>
+  <svg class="ssring" viewBox="0 0 100 100" aria-label="SS-inkwell publisher mark">
+    <circle cx="50" cy="50" r="42" fill="none" stroke="#1F2428" stroke-width="4"/>
+    <text x="38" y="63" text-anchor="middle" font-family="Spectral, serif" font-weight="600" font-style="italic" font-size="40" fill="#1F2428">S</text>
+    <text x="62" y="63" text-anchor="middle" font-family="Spectral, serif" font-weight="600" font-style="italic" font-size="40" fill="#1F2428">S</text>
+  </svg>
+  <div class="fnote"><b>Papyrus</b> · published by SS-inkwell · single source of truth: <span class="mono">papyrus-palettes.js</span><br/>
+  Every theme ships with a written design language — the rules above are named, documented, and kept.</div>
+</footer>
+
+</div>
+
+<script>
+const T = [
+  {
+    name: 'Inkwell', mode: 'light', tag: 'Blueprint ink on planner cream',
+    idea: 'Inkwell went cool — teal-slate keywords, emerald strings, blueprint-blue types on warm cream — with a <b>violet proof-stamp</b> reserved for <span style="font-family:JetBrains Mono,monospace;font-size:11px">self</span>. The sanctioned exception to the warm rule: cool drafting marks, warm table.',
+    paper:'#FCF6E6', ink:'#13161A', fg:'#1F2428', border:'#DDD4B2', muted:'#847F6C', punct:'#8A8676',
+    kw:'#2C5E64', str:'#1E7A52', fn:'#157E6A', cls:'#2C6E8C', num:'#7A5418', self:'#4A38A0',
+    chips:[['#2C5E64','teal-slate'],['#1E7A52','emerald'],['#157E6A','teal'],['#2C6E8C','blueprint'],['#4A38A0','violet stamp']],
+  },
+  {
+    name: 'Foxed Vellum', mode: 'light', tag: 'Iron-gall on aged, foxed paper',
+    idea: 'The oldest document in the drawer — rubric-red keywords, forest strings, pine functions, bistre types. No accent event at all: the purest expression of the original warm system, deepened to a ≥5.0 contrast floor.',
+    paper:'#F6EDD4', ink:'#2A2218', fg:'#2A2218', border:'#D8CCA8', muted:'#71623F', punct:'#6F6445',
+    kw:'#A2381A', str:'#3A5828', fn:'#2F5648', cls:'#7A4420', num:'#735919', self:'#A2381A',
+    chips:[['#A2381A','rubric'],['#3A5828','forest'],['#2F5648','pine'],['#7A4420','bistre'],['#735919','aged gold']],
+  },
+  {
+    name: 'Noir', mode: 'dark · true black', tag: 'Jewel Noir — ember, gold & verdigris on true black', short: 'jewel noir — ember, gold & verdigris',
+    idea: 'Four saturated jewel poles — smoked ember, gold, electric verdigris, bone — on a disciplined ash field over <span style="font-family:JetBrains Mono,monospace;font-size:11px">#000000</span> (OLED pixels off). A <b>hot-ember flare</b> marks <span style="font-family:JetBrains Mono,monospace;font-size:11px">self</span>; classes left the error hue for gold.',
+    paper:'#000000', ink:'#CFC4A8', fg:'#CFC4A8', border:'#2E261A', muted:'#6E6858', punct:'#7E7460',
+    kw:'#C86038', str:'#A8B478', fn:'#3FC8AE', cls:'#E8A230', num:'#EDE2C6', self:'#FF8814',
+    chips:[['#C86038','ember'],['#E8A230','gold'],['#3FC8AE','verdigris'],['#EDE2C6','bone'],['#FF8814','the flare']],
+  },
+  {
+    name: 'Lamplight', mode: 'dark · warm', tag: 'A lamplit study at 11pm',
+    idea: 'The warm room — apricot, wheat, sage and coral glowing evenly on cocoa. Deliberately pole-free (that’s Noir’s move); errors split to brick so coral could stay the signature. The cozy dark.',
+    paper:'#181210', ink:'#E8D8B5', fg:'#E8D8B5', border:'#352A20', muted:'#897860', punct:'#897860',
+    kw:'#E8A878', str:'#D4B878', fn:'#9ACBA8', cls:'#E08068', num:'#E8B080', self:'#E8A878',
+    chips:[['#E8A878','apricot'],['#D4B878','wheat'],['#9ACBA8','sage'],['#E08068','coral'],['#D9584A','brick (errors)']],
+  },
+];
+
+function code(t){
+  const s = (c, x, extra='') => `<span style="color:${c};${extra}">${x}</span>`;
+  return `<pre class="spec" style="background:${t.paper};color:${t.fg}">` +
+`${s(t.muted, '// '+(t.short || t.tag.toLowerCase()), 'font-style:italic')}
+${s(t.kw,'export class','font-weight:600')} ${s(t.cls,'Theme')} ${s(t.punct,'{')}
+  ${s(t.fg,'contrast')} ${s(t.punct,'=')} ${s(t.num,'4.5')}${s(t.punct,';')}
+  ${s(t.kw,'async','font-weight:600')} ${s(t.fn,'load')}${s(t.punct,'(')}${s(t.fg,'path')}${s(t.punct,':')} ${s(t.cls,'string')}${s(t.punct,')')} ${s(t.punct,'{')}
+    ${s(t.kw,'return','font-weight:600')} ${s(t.self,'this','font-style:italic')}${s(t.punct,'.')}${s(t.fn,'read')}${s(t.punct,'(')}${s(t.str,'"utf8"')}${s(t.punct,');')}
+  ${s(t.punct,'}')}
+${s(t.punct,'}')}</pre>`;
+}
+
+document.getElementById('themes').innerHTML = T.map(t => `
+  <div class="theme">
+    <div class="tmeta">
+      <span class="mode" style="background:${t.paper};color:${t.ink};box-shadow:0 0 0 1px ${t.border}">${t.mode}</span>
+      <div class="tname">${t.name}</div>
+      <div class="ttag">${t.tag}</div>
+      <div class="tstory">${t.idea}</div>
+      <div class="chips">${t.chips.map(([c,l]) => `<span class="chip"><i style="background:${c}"></i>${l}</span>`).join('')}</div>
+    </div>
+    ${code(t)}
+  </div>`).join('');
+
+document.getElementById('tuis').innerHTML = T.map(t => {
+  const claude = {Inkwell:'#4A38A0','Foxed Vellum':'#2F5648',Noir:'#3FC8AE',Lamplight:'#9ACBA8'}[t.name];
+  const prompt = {Inkwell:'#2C5E64','Foxed Vellum':'#6A3A14',Noir:'#C86038',Lamplight:'#E8A878'}[t.name];
+  return `<div class="tui" style="background:${t.paper};color:${t.fg};box-shadow:0 0 0 1px ${t.border}">
+    <div class="nm" style="color:${t.fg}">${t.name}</div>
+    <div><span style="color:${claude};font-weight:600">✻ Thinking…</span></div>
+    <div style="border:1px solid ${prompt};border-radius:3px;padding:2px 8px;margin:6px 0;color:${t.muted}"><span style="color:${prompt}">&gt;</span> prompt</div>
+    <div style="font-size:10px"><span style="color:${claude}">[Opus]</span> <span style="color:${t.kw}">⎇ main</span> <span style="color:${t.muted}">acct:A ·</span> <span style="color:${prompt}">██</span><span style="color:${t.border}">────</span> <span style="color:${t.muted}">15%</span></div>
+  </div>`;
+}).join('');
+</script>
+</body>
+</html>

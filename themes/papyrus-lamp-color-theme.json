@@ -1,4 +1,20 @@
 {
+  "$schema": "vscode://schemas/color-theme",
+  "_papyrus": {
+    "direction": "Lamplight v1.1 (consolidation) — lamplit warm identity confirmed: apricot keywords, wheat strings, sage functions, coral classes on cocoa. One structural fix: error split from coral to brick #D9584A so structure ≠ damage.",
+    "roles": {
+      "keyword": "#E8A878 apricot",
+      "function": "#9ACBA8 sage",
+      "string": "#D4B878 wheat",
+      "classType": "#E08068 coral",
+      "number": "#E8B080 peach",
+      "escape": "#C8C078 chartreuse",
+      "ink": "#E8D8B5 parchment",
+      "error": "#D9584A brick (damage only — split from coral)"
+    },
+    "chrome": "Warm cocoa chrome with apricot accents — Lamplight's own identity; unchanged this pass.",
+    "spec": "Full rationale in deliverables/design-docs/papyrus-lamplight-design-language.md. Single source of truth: papyrus-palettes.js."
+  },
   "name": "Papyrus Lamplight",
   "type": "dark",
   "colors": {
@@ -23,7 +39,7 @@
     "editorBracketMatch.border": "#897860",
     "editorGutter.background": "#181210",
     "editorOverviewRuler.border": "#2E241C",
-    "editorError.foreground": "#E08068",
+    "editorError.foreground": "#D9584A",
     "editorWarning.foreground": "#E8A878",
     "editorInfo.foreground": "#9ACBA8",
     "editorHint.foreground": "#C8C078",
@@ -88,7 +104,7 @@
     "input.foreground": "#E8D8B5",
     "input.border": "#2E241C",
     "input.placeholderForeground": "#544A38",
-    "inputValidation.errorBorder": "#E08068",
+    "inputValidation.errorBorder": "#D9584A",
     "inputValidation.warningBorder": "#E8A878",
     "dropdown.background": "#1F1814",
     "dropdown.foreground": "#E8D8B5",
@@ -139,7 +155,7 @@
     "diffEditor.removedTextBackground": "#E0806820",
     "gitDecoration.addedResourceForeground": "#9ACBA8",
     "gitDecoration.modifiedResourceForeground": "#D4B878",
-    "gitDecoration.deletedResourceForeground": "#E08068",
+    "gitDecoration.deletedResourceForeground": "#D9584A",
     "gitDecoration.untrackedResourceForeground": "#C8C078",
     "gitDecoration.ignoredResourceForeground": "#544A38",
     "gitDecoration.conflictingResourceForeground": "#E8A878",
@@ -170,7 +186,7 @@
     "symbolIcon.numberForeground": "#E8B080",
     "symbolIcon.propertyForeground": "#C0A878",
     "descriptionForeground": "#9C8B68",
-    "errorForeground": "#E08068",
+    "errorForeground": "#D9584A",
     "textLink.foreground": "#9ACBA8",
     "textLink.activeForeground": "#B0DCBC",
     "inputOption.activeBorder": "#E8A878",
@@ -580,7 +596,7 @@
         "invalid.illegal"
       ],
       "settings": {
-        "foreground": "#E08068",
+        "foreground": "#D9584A",
         "fontStyle": "underline"
       }
     },

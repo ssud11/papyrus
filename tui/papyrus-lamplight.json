@@ -1,5 +1,7 @@
 {
-  "_sync": "design-current · 2026-07-01 · userMessageBackground/subagent/rainbow pending Design pass",
+  "_sync": "design-current · 2026-07-07 · full — all families present (v1.1 consolidation pass, error split to brick)",
+  "_philosophy": "Warm lamplit study: sage #9ACBA8 is Claude's accent (spinner + label); apricot borders your prompts and marks memory. GLOW RULE: shimmers stay in-family (apricot glows peach, sage glows deep sage) — all-warm theme, warm sheen is native. Brick #D9584A reserved for errors (split from coral so structure ≠ damage).",
+  "_statusLine_acct": "The custom 'acct' status-line segment is ambient identity (lowest tier, like token count). Label 'acct:' in dim (#9A8868), value in text (#E8D8B5). Place after '⎇ branch', before the '·' opening live metrics. Lowercase, normal weight, no glyph/box. Caution exception: if the account signals prod/shared, promote ONLY the value to amber (#E8A878); default stays dim.",
   "name": "Papyrus Lamplight",
   "base": "dark",
   "overrides": {
@@ -17,7 +19,7 @@
     "remember":           "#E8A878",
 
     "success":            "#D4B878",
-    "error":              "#E08068",
+    "error":              "#D9584A",
     "warning":            "#E8A878",
     "warningShimmer":     "#E8B080",
     "merged":             "#E8A878",
@@ -32,15 +34,46 @@
     "fastModeShimmer":    "#E8A878",
 
     "diffAdded":          "#9ACBA820",
-    "diffRemoved":        "#E0806820",
+    "diffRemoved":        "#D9584A20",
     "diffAddedDimmed":    "#9ACBA810",
-    "diffRemovedDimmed":  "#E0806810",
+    "diffRemovedDimmed":  "#D9584A10",
     "diffAddedWord":      "#9ACBA840",
-    "diffRemovedWord":    "#E0806840",
+    "diffRemovedWord":    "#D9584A40",
+
+    "userMessageBackground":      "#1F1814",
+    "userMessageBackgroundHover": "#241C16",
+    "messageActionsBackground":   "#2A2118",
+    "bashMessageBackgroundColor": "#1C1F1A",
+    "memoryBackgroundColor":      "#281E14",
+    "selectionBg":                "#4A382080",
 
     "rate_limit_fill":    "#E8A878",
     "rate_limit_empty":   "#352A20",
     "briefLabelYou":      "#9A8868",
-    "briefLabelClaude":   "#9ACBA8"
+    "briefLabelClaude":   "#9ACBA8",
+
+    "red_FOR_SUBAGENTS_ONLY":    "#E08068",
+    "blue_FOR_SUBAGENTS_ONLY":   "#92BCD0",
+    "green_FOR_SUBAGENTS_ONLY":  "#C8C078",
+    "yellow_FOR_SUBAGENTS_ONLY": "#E8C890",
+    "purple_FOR_SUBAGENTS_ONLY": "#B89AD8",
+    "orange_FOR_SUBAGENTS_ONLY": "#E8A878",
+    "pink_FOR_SUBAGENTS_ONLY":   "#E0A0B8",
+    "cyan_FOR_SUBAGENTS_ONLY":   "#7FC4B0",
+
+    "rainbow_red":            "#E08068",
+    "rainbow_red_shimmer":    "#E89070",
+    "rainbow_orange":         "#E8A878",
+    "rainbow_orange_shimmer": "#F0BC84",
+    "rainbow_yellow":         "#E8C890",
+    "rainbow_yellow_shimmer": "#F0D89E",
+    "rainbow_green":          "#C8C078",
+    "rainbow_green_shimmer":  "#D4CE8E",
+    "rainbow_blue":           "#92BCD0",
+    "rainbow_blue_shimmer":   "#A8CCDC",
+    "rainbow_indigo":         "#A6A4DE",
+    "rainbow_indigo_shimmer": "#BCBAE8",
+    "rainbow_violet":         "#B89AD8",
+    "rainbow_violet_shimmer": "#CCB0E6"
   }
 }
