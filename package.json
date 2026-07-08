@@ -1,15 +1,15 @@
 {
   "name": "papyrus-inkwright",
   "displayName": "Papyrus Inkwright",
-  "description": "Metallic-ink-on-paper themes — Inkwell (light), Foxed Vellum (light), and Noir (dark). QD-OLED tuned. Solarized lineage with zero blue/purple fringe.",
-  "version": "2.0.1",
+  "description": "Metallic ink on warm paper — four themes for VS Code and Claude Code. Inkwell (blueprint ink), Foxed Vellum (iron-gall), Noir (jewel dark on true black), Lamplight (lamplit study). QD-OLED tuned, AA contrast.",
+  "version": "2.1.0",
   "publisher": "SS-inkwright",
   "repository": {
     "type": "git",
     "url": "https://github.com/ssud11/papyrus"
   },
   "license": "MIT",
-  "keywords": ["theme", "color theme", "solarized", "light", "dark", "papyrus", "warm"],
+  "keywords": ["theme", "color theme", "solarized", "light", "dark", "papyrus", "warm", "claude-code", "qd-oled"],
   "galleryBanner": {
     "color": "#EAE0BC",
     "theme": "light"

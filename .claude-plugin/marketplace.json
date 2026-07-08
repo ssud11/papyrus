@@ -1,0 +1,14 @@
+{
+  "name": "papyrus",
+  "owner": {
+    "name": "Saadman Sakib"
+  },
+  "description": "Papyrus — metallic-ink-on-paper themes for VS Code and the Claude Code TUI",
+  "plugins": [
+    {
+      "name": "papyrus",
+      "source": "./",
+      "description": "Four Claude Code TUI themes: Inkwell, Foxed Vellum, Noir, Lamplight — metallic ink on paper."
+    }
+  ]
+}
