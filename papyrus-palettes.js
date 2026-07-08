@@ -101,7 +101,7 @@
         brightBlue: '#4A6E7C', brightMagenta: '#B0685A', brightCyan: '#3A6B5A', brightWhite: '#C2B48E',
       },
       tui: {
-        base: 'light', claude: '#2F5648', claudeShimmer: '#244C46', text: '#2A2218',
+        base: 'light', claude: '#2F5648', claudeShimmer: '#5D7B70', text: '#2A2218',
         inverseText: '#F6EDD4', inactive: '#7A6E54', inactiveShimmer: '#A89A78', subtle: '#D8CCA8',
         suggestion: '#8E7C50', permission: '#6A3A14', permissionShimmer: '#9A7822', remember: '#A2381A',
         success: '#4A6B2E', error: '#7A2A18', warning: '#8A5818', warningShimmer: '#9A7822', merged: '#6A3A14',
@@ -193,14 +193,14 @@
         brightBlue: '#A0C0BE', brightMagenta: '#F0A898', brightCyan: '#B8DCCC', brightWhite: '#E8D8B5',
       },
       tui: {
-        base: 'dark', claude: '#9ACBA8', claudeShimmer: '#7FC4B0', text: '#E8D8B5',
+        base: 'dark', claude: '#B87E2E', claudeShimmer: '#D89A48', text: '#E8D8B5',
         inverseText: '#181210', inactive: '#9A8868', inactiveShimmer: '#5A4E3A', subtle: '#352A20',
         suggestion: '#897860', permission: '#E8A878', permissionShimmer: '#E8B080', remember: '#E8A878',
         success: '#D4B878', error: '#D9584A', warning: '#E8A878', warningShimmer: '#E8B080', merged: '#E8A878',
         promptBorder: '#E8A878', promptBorderShimmer: '#E8B080', planMode: '#7FC4B0', autoAccept: '#D4B878',
         bashBorder: '#E8A878', ide: '#9ACBA8', fastMode: '#E8B080', fastModeShimmer: '#E8A878',
         diffAdded: '#9ACBA820', diffRemoved: '#D9584A20', rate_limit_fill: '#E8A878', rate_limit_empty: '#352A20',
-        briefLabelYou: '#9A8868', briefLabelClaude: '#9ACBA8',
+        briefLabelYou: '#9A8868', briefLabelClaude: '#B87E2E',
         // Fullscreen-mode message backgrounds (lifted cocoa)
         userMessageBackground: '#1F1814', userMessageBackgroundHover: '#241C16', messageActionsBackground: '#2A2118',
         bashMessageBackgroundColor: '#1C1F1A', memoryBackgroundColor: '#281E14', selectionBg: '#4A382080',
