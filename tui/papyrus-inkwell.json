@@ -1,5 +1,5 @@
 {
-  "_sync": "repo-ahead · 2026-07-13 · quantize-aware fills (CC VS Code 256-color cap) — Design not yet updated",
+  "_sync": "repo-ahead · 2026-07-13 · quantize-aware fills+text (CC VS Code 256-color cap) — Design not yet updated",
   "_philosophy": "Blueprint Ink (v3.1): cool teal/green structure on warm cream. Violet #4A38A0 is Claude's 'self' — spinner, label, permission (Claude asking to act). GLOW RULE: shimmer partners stay in-family (violet glows violet #8A78D8, teal glows teal #3FA890); amber glows ONLY for warnings, so an amber sheen always means caution. Brass/ochre remain as static warm anchors; oxblood reserved for errors.",
   "_statusLine_acct": "Label 'acct:' in dim (#6E6F62), value in foreground (#1F2428). Place after branch, before live metrics. Caution exception: if account signals prod/shared, promote ONLY the value to amber (#8A5818).",
   "name": "Papyrus Inkwell",
@@ -8,7 +8,7 @@
 
     "claude":             "#4A38A0",
     "claudeShimmer":      "#6E5AC8",
-    "text":               "#1F2428",
+    "text":               "#181819",
     "inverseText":        "#FCF6E6",
     "inactive":           "#6E6F62",
     "inactiveShimmer":    "#A8A593",

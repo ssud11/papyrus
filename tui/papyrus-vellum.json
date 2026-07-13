@@ -1,5 +1,5 @@
 {
-  "_sync": "repo-ahead · 2026-07-13 · quantize-aware fills (CC VS Code 256-color cap) — Design not yet updated",
+  "_sync": "repo-ahead · 2026-07-13 · quantize-aware fills+text (CC VS Code 256-color cap) — Design not yet updated",
   "_philosophy": "Iron-gall on aged, foxed paper: pine #2F5648 is Claude's accent (spinner + label); walnut borders your prompts; rubric red #A2381A marks memory and self. GLOW RULE: shimmers stay in-family (walnut glows gold, pine glows lighter pine — same hue, brighter) — all-warm theme, so gold sheen is native here, not caution-only. Oxblood reserved for errors.",
   "_statusLine_acct": "The custom 'acct' status-line segment is ambient identity (lowest tier, like token count). Label 'acct:' in dim (#7A6E54), value in text (#2A2218). Place after '⎇ branch', before the '·' opening live metrics. Lowercase, normal weight, no glyph/box. Caution exception: if the account signals prod/shared, promote ONLY the value to amber (#8A5818); default stays dim.",
   "name": "Papyrus Foxed Vellum",
@@ -8,7 +8,7 @@
 
     "claude":             "#2F5648",
     "claudeShimmer":      "#5D7B70",
-    "text":               "#2A2218",
+    "text":               "#191512",
     "inverseText":        "#F6EDD4",
     "inactive":           "#7A6E54",
     "inactiveShimmer":    "#A89A78",
