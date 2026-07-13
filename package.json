@@ -1,7 +1,7 @@
 {
   "name": "papyrus-inkwright",
   "displayName": "Papyrus Inkwright",
-  "description": "Metallic ink on warm paper — four themes for VS Code and Claude Code. Inkwell (blueprint ink), Foxed Vellum (iron-gall), Noir (jewel dark on true black), Lamplight (lamplit study). QD-OLED tuned, AA contrast.",
+  "description": "Metallic ink on warm paper — four themes for VS Code and the Claude Code TUI. QD-OLED tuned, contrast budgeted.",
   "version": "2.1.0",
   "publisher": "SS-inkwright",
   "repository": {

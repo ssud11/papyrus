@@ -93,7 +93,7 @@
     <div class="badges">
       <span class="badge">VS Code + Claude Code TUI</span>
       <span class="badge">QD-OLED tuned · no subpixel fringe</span>
-      <span class="badge">Contrast budgeted — AA everywhere</span>
+      <span class="badge">Contrast budgeted, not guessed</span>
     </div>
   </div>
 </header>
@@ -109,8 +109,8 @@
   <div class="rules">
     <div class="rule"><h3>The function band</h3><p>Functions and decorators sit in the green→teal band (hue ~137–187°) in <b>all four themes</b> — the one hue family the whole system shares.</p></div>
     <div class="rule"><h3>Structure ≠ damage</h3><p>Class and type colors never share the error hue. Red always means <em>stop</em> — never syntax.</p></div>
-    <div class="rule"><h3>Sacred accents</h3><p>Inkwell's violet and Noir's hot ember mark <span class="mono">self</span>/<span class="mono">this</span> — and Claude's own voice in the terminal. Rare by design; that's what makes them read.</p></div>
-    <div class="rule"><h3>The glow rule</h3><p>TUI shimmers glow <em>in-family</em>. In the cool themes an amber sheen has exactly one meaning: caution.</p></div>
+    <div class="rule"><h3>Sacred accents</h3><p>Inkwell's violet and Noir's hot ember mark <span class="mono">self</span>/<span class="mono">this</span> — and in Inkwell, violet is also Claude's own voice in the terminal. Rare by design; that's what makes them read.</p></div>
+    <div class="rule"><h3>The glow rule</h3><p>TUI shimmers glow <em>in-family</em>. In Inkwell — the one cool theme — an amber sheen has exactly one meaning: caution.</p></div>
     <div class="rule"><h3>Contrast is budgeted</h3><p>Content tokens ≥ 4.5:1 · structural ≥ 3.0 · comments and punctuation deepened to ≥ 5.0. Legibility by arithmetic, not vibes.</p></div>
     <div class="rule"><h3>The warm rule</h3><p>No blue, purple, or magenta in everyday roles — QD-OLED panels show no subpixel fringe. Two documented exceptions: Inkwell's cool palette, and the spectral identity slots (subagents, the ultrathink rainbow).</p></div>
   </div>
@@ -122,13 +122,21 @@
   <div class="tuis" id="tuis"></div>
 </section>
 
+<section>
+  <h2>Get Papyrus</h2>
+  <div class="rules">
+    <div class="rule"><h3>VS Code</h3><p>Search <b>“Papyrus”</b> in the Extensions panel, or via the command palette:</p><p class="mono" style="margin-top:8px">ext install SS-inkwright.papyrus-inkwright</p></div>
+    <div class="rule"><h3>Claude Code TUI</h3><p>The repo doubles as a Claude Code plugin marketplace:</p><p class="mono" style="margin-top:8px">claude plugin marketplace add ssud11/papyrus<br/>claude plugin install papyrus@papyrus</p></div>
+  </div>
+</section>
+
 <footer>
-  <svg class="ssring" viewBox="0 0 100 100" aria-label="SS-inkwell publisher mark">
+  <svg class="ssring" viewBox="0 0 100 100" aria-label="SS-inkwright publisher mark">
     <circle cx="50" cy="50" r="42" fill="none" stroke="#1F2428" stroke-width="4"/>
     <text x="38" y="63" text-anchor="middle" font-family="Spectral, serif" font-weight="600" font-style="italic" font-size="40" fill="#1F2428">S</text>
     <text x="62" y="63" text-anchor="middle" font-family="Spectral, serif" font-weight="600" font-style="italic" font-size="40" fill="#1F2428">S</text>
   </svg>
-  <div class="fnote"><b>Papyrus</b> · published by SS-inkwell · single source of truth: <span class="mono">papyrus-palettes.js</span><br/>
+  <div class="fnote"><b>Papyrus</b> · published by SS-inkwright · built from one palette source: <span class="mono">papyrus-palettes.js</span><br/>
   Every theme ships with a written design language — the rules above are named, documented, and kept.</div>
 </footer>
 
@@ -137,29 +145,29 @@
 <script>
 const T = [
   {
-    name: 'Inkwell', mode: 'light', tag: 'Blueprint ink on planner cream',
-    idea: 'Inkwell went cool — teal-slate keywords, emerald strings, blueprint-blue types on warm cream — with a <b>violet proof-stamp</b> reserved for <span style="font-family:JetBrains Mono,monospace;font-size:11px">self</span>. The sanctioned exception to the warm rule: cool drafting marks, warm table.',
+    name: 'Inkwell', mode: 'light', tag: 'Cool blueprint ink on planner cream. The light default.', short: 'blueprint ink on planner cream',
+    idea: 'Teal-slate keywords, emerald strings, blueprint-blue types — with a <b>violet proof-stamp</b> reserved for <span style="font-family:JetBrains Mono,monospace;font-size:11px">self</span>. Papyrus’s one sanctioned cool theme: the marks turn cool, the paper stays warm.',
     paper:'#FCF6E6', ink:'#13161A', fg:'#1F2428', border:'#DDD4B2', muted:'#847F6C', punct:'#8A8676',
     kw:'#2C5E64', str:'#1E7A52', fn:'#157E6A', cls:'#2C6E8C', num:'#7A5418', self:'#4A38A0',
     chips:[['#2C5E64','teal-slate'],['#1E7A52','emerald'],['#157E6A','teal'],['#2C6E8C','blueprint'],['#4A38A0','violet stamp']],
   },
   {
-    name: 'Foxed Vellum', mode: 'light', tag: 'Iron-gall on aged, foxed paper',
-    idea: 'The oldest document in the drawer — rubric-red keywords, forest strings, pine functions, bistre types. No accent event at all: the purest expression of the original warm system, deepened to a ≥5.0 contrast floor.',
+    name: 'Foxed Vellum', mode: 'light', tag: 'Iron-gall red, forest, and bistre on aged, foxed paper.', short: 'iron-gall on aged, foxed paper',
+    idea: 'The oldest document in the drawer and the purest warm ground — no accent event, just oxidized ink deepened past AA to a 5.0 contrast floor.',
     paper:'#F6EDD4', ink:'#2A2218', fg:'#2A2218', border:'#D8CCA8', muted:'#71623F', punct:'#6F6445',
     kw:'#A2381A', str:'#3A5828', fn:'#2F5648', cls:'#7A4420', num:'#735919', self:'#A2381A',
     chips:[['#A2381A','rubric'],['#3A5828','forest'],['#2F5648','pine'],['#7A4420','bistre'],['#735919','aged gold']],
   },
   {
-    name: 'Noir', mode: 'dark · true black', tag: 'Jewel Noir — ember, gold & verdigris on true black', short: 'jewel noir — ember, gold & verdigris',
-    idea: 'Four saturated jewel poles — smoked ember, gold, electric verdigris, bone — on a disciplined ash field over <span style="font-family:JetBrains Mono,monospace;font-size:11px">#000000</span> (OLED pixels off). A <b>hot-ember flare</b> marks <span style="font-family:JetBrains Mono,monospace;font-size:11px">self</span>; classes left the error hue for gold.',
+    name: 'Noir', mode: 'dark · true black', tag: 'Four jewel poles — ember, gold, verdigris, bone — on true black.', short: 'jewel noir — ember, gold & verdigris',
+    idea: 'A disciplined ash field over <span style="font-family:JetBrains Mono,monospace;font-size:11px">#000000</span>, so OLED pixels switch fully off. A <b>hot-ember flare</b> marks <span style="font-family:JetBrains Mono,monospace;font-size:11px">self</span>; structure never borrows the error hue.',
     paper:'#000000', ink:'#CFC4A8', fg:'#CFC4A8', border:'#2E261A', muted:'#6E6858', punct:'#7E7460',
     kw:'#C86038', str:'#A8B478', fn:'#3FC8AE', cls:'#E8A230', num:'#EDE2C6', self:'#FF8814',
     chips:[['#C86038','ember'],['#E8A230','gold'],['#3FC8AE','verdigris'],['#EDE2C6','bone'],['#FF8814','the flare']],
   },
   {
-    name: 'Lamplight', mode: 'dark · warm', tag: 'A lamplit study at 11pm',
-    idea: 'The warm room — apricot, wheat, sage and coral glowing evenly on cocoa. Deliberately pole-free (that’s Noir’s move); errors split to brick so coral could stay the signature. The cozy dark.',
+    name: 'Lamplight', mode: 'dark · warm', tag: 'Apricot, wheat, and sage on warm cocoa. The cozy dark.', short: 'a lamplit study at 11pm',
+    idea: 'A lamplit study at 11pm — everything glows evenly, deliberately pole-free (that’s Noir’s move). The lowest contrast tension of the four; errors wear brick so coral stays the signature.',
     paper:'#181210', ink:'#E8D8B5', fg:'#E8D8B5', border:'#352A20', muted:'#897860', punct:'#897860',
     kw:'#E8A878', str:'#D4B878', fn:'#9ACBA8', cls:'#E08068', num:'#E8B080', self:'#E8A878',
     chips:[['#E8A878','apricot'],['#D4B878','wheat'],['#9ACBA8','sage'],['#E08068','coral'],['#D9584A','brick (errors)']],
@@ -191,7 +199,7 @@ document.getElementById('themes').innerHTML = T.map(t => `
   </div>`).join('');
 
 document.getElementById('tuis').innerHTML = T.map(t => {
-  const claude = {Inkwell:'#4A38A0','Foxed Vellum':'#2F5648',Noir:'#3FC8AE',Lamplight:'#9ACBA8'}[t.name];
+  const claude = {Inkwell:'#4A38A0','Foxed Vellum':'#2F5648',Noir:'#3FC8AE',Lamplight:'#B87E2E'}[t.name];
   const prompt = {Inkwell:'#2C5E64','Foxed Vellum':'#6A3A14',Noir:'#C86038',Lamplight:'#E8A878'}[t.name];
   return `<div class="tui" style="background:${t.paper};color:${t.fg};box-shadow:0 0 0 1px ${t.border}">
     <div class="nm" style="color:${t.fg}">${t.name}</div>

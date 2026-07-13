@@ -12,11 +12,15 @@ papyrus-design-context.md
 papyrus-palettes.js
 papyrus-showcase.html
 marketplace-copy.md
+papyrus-descriptions.md
 
 # CC / tooling / local
 .claude/**
 .claude-plugin/**
+.agents/**
+.vscode/**
 CLAUDE.md
+AGENTS.md
 SESSION-LOG.md
 
 # Build artifacts
