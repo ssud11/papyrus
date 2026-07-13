@@ -1,5 +1,5 @@
 {
-  "_sync": "design-current · 2026-07-08 · full — brass Claude-accent swap (was sage)",
+  "_sync": "repo-ahead · 2026-07-13 · quantize-aware fills (CC VS Code 256-color cap) — Design not yet updated",
   "_philosophy": "Warm lamplit study: brass #B87E2E is Claude's accent (spinner + label) — distinct from Noir's verdigris; sage #9ACBA8 holds the function band. Apricot borders your prompts and marks memory. GLOW RULE: shimmer partners stay in-family (apricot glows peach, sage glows deep sage) — all-warm theme, warm sheen is native. Brick #D9584A reserved for errors (split from coral so structure ≠ damage).",
   "_statusLine_acct": "The custom 'acct' status-line segment is ambient identity (lowest tier, like token count). Label 'acct:' in dim (#9A8868), value in text (#E8D8B5). Place after '⎇ branch', before the '·' opening live metrics. Lowercase, normal weight, no glyph/box. Caution exception: if the account signals prod/shared, promote ONLY the value to amber (#E8A878); default stays dim.",
   "name": "Papyrus Lamplight",
@@ -40,11 +40,11 @@
     "diffAddedWord":      "#9ACBA840",
     "diffRemovedWord":    "#D9584A40",
 
-    "userMessageBackground":      "#1F1814",
-    "userMessageBackgroundHover": "#241C16",
-    "messageActionsBackground":   "#2A2118",
-    "bashMessageBackgroundColor": "#1C1F1A",
-    "memoryBackgroundColor":      "#281E14",
+    "userMessageBackground":      "#4C1210",
+    "userMessageBackgroundHover": "#5F0000",
+    "messageActionsBackground":   "#303030",
+    "bashMessageBackgroundColor": "#262626",
+    "memoryBackgroundColor":      "#303030",
     "selectionBg":                "#4A382080",
 
     "rate_limit_fill":    "#E8A878",

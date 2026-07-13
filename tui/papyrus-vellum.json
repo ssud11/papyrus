@@ -1,5 +1,5 @@
 {
-  "_sync": "design-current · 2026-07-08 · full — pine shimmer glow-direction fix (lighter, not deep teal)",
+  "_sync": "repo-ahead · 2026-07-13 · quantize-aware fills (CC VS Code 256-color cap) — Design not yet updated",
   "_philosophy": "Iron-gall on aged, foxed paper: pine #2F5648 is Claude's accent (spinner + label); walnut borders your prompts; rubric red #A2381A marks memory and self. GLOW RULE: shimmers stay in-family (walnut glows gold, pine glows lighter pine — same hue, brighter) — all-warm theme, so gold sheen is native here, not caution-only. Oxblood reserved for errors.",
   "_statusLine_acct": "The custom 'acct' status-line segment is ambient identity (lowest tier, like token count). Label 'acct:' in dim (#7A6E54), value in text (#2A2218). Place after '⎇ branch', before the '·' opening live metrics. Lowercase, normal weight, no glyph/box. Caution exception: if the account signals prod/shared, promote ONLY the value to amber (#8A5818); default stays dim.",
   "name": "Papyrus Foxed Vellum",
@@ -40,11 +40,11 @@
     "diffAddedWord":      "#3A582840",
     "diffRemovedWord":    "#7A2A1840",
 
-    "userMessageBackground":      "#EEE4C8",
-    "userMessageBackgroundHover": "#E7DCBC",
+    "userMessageBackground":      "#E0D8B0",
+    "userMessageBackgroundHover": "#D8D0A8",
     "messageActionsBackground":   "#E2D7AC",
-    "bashMessageBackgroundColor": "#E6E8DC",
-    "memoryBackgroundColor":      "#ECE2D0",
+    "bashMessageBackgroundColor": "#DCE0D4",
+    "memoryBackgroundColor":      "#EEDCB0",
     "selectionBg":                "#D2C49070",
 
     "rate_limit_fill":    "#6A3A14",

@@ -19,6 +19,9 @@
   punctuation and number contrast lifted to AA
 - **Lamplight v1.1** — errors split from coral to brick; Claude accent moved from
   sage to brass in the TUI theme
+- TUI message-fill colors made quantize-aware — values chosen to stay in-family
+  under Claude Code's 256-color cap in VS Code terminals while rendering true
+  to hex everywhere else
 
 ## [2.0.1] - 2026-06-05
 

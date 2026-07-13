@@ -1,5 +1,5 @@
 {
-  "_sync": "design-current · 2026-07-07 · full — all families present (Jewel Noir v2 redesign)",
+  "_sync": "repo-ahead · 2026-07-13 · quantize-aware fills (CC VS Code 256-color cap) — Design not yet updated",
   "_philosophy": "Jewel Noir (v2): four saturated poles — ember, gold, electric verdigris, bone — on warm ash over true black. Verdigris #3FC8AE is Claude's accent (spinner + label); ember borders your prompts; hot ember #FF8814 marks memory. Clay reserved for errors. No blue/purple/magenta in everyday roles.",
   "_statusLine_acct": "The custom 'acct' status-line segment is ambient identity (lowest tier, like token count). Label 'acct:' in dim (#8A7E66), value in text (#CFC4A8). Place after '⎇ branch', before the '·' opening live metrics. Lowercase, normal weight, no glyph/box. Caution exception: if the account signals prod/shared, promote ONLY the value to amber (#DDA065); default stays dim.",
   "name": "Papyrus Noir",
@@ -40,11 +40,11 @@
     "diffAddedWord":      "#3FC8AE40",
     "diffRemovedWord":    "#D26A5540",
 
-    "userMessageBackground":      "#12100A",
-    "userMessageBackgroundHover": "#1A150E",
-    "messageActionsBackground":   "#221C12",
-    "bashMessageBackgroundColor": "#0E1210",
-    "memoryBackgroundColor":      "#1A120A",
+    "userMessageBackground":      "#121212",
+    "userMessageBackgroundHover": "#1C1C1C",
+    "messageActionsBackground":   "#262626",
+    "bashMessageBackgroundColor": "#1C1C1C",
+    "memoryBackgroundColor":      "#262626",
     "selectionBg":                "#3A2E1880",
 
     "rate_limit_fill":    "#C86038",

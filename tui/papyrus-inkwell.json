@@ -1,5 +1,5 @@
 {
-  "_sync": "design-current · 2026-07-07 · full — all families present (v3.1 shimmer glow-rule fix)",
+  "_sync": "repo-ahead · 2026-07-13 · quantize-aware fills (CC VS Code 256-color cap) — Design not yet updated",
   "_philosophy": "Blueprint Ink (v3.1): cool teal/green structure on warm cream. Violet #4A38A0 is Claude's 'self' — spinner, label, permission (Claude asking to act). GLOW RULE: shimmer partners stay in-family (violet glows violet #8A78D8, teal glows teal #3FA890); amber glows ONLY for warnings, so an amber sheen always means caution. Brass/ochre remain as static warm anchors; oxblood reserved for errors.",
   "_statusLine_acct": "Label 'acct:' in dim (#6E6F62), value in foreground (#1F2428). Place after branch, before live metrics. Caution exception: if account signals prod/shared, promote ONLY the value to amber (#8A5818).",
   "name": "Papyrus Inkwell",
@@ -40,11 +40,11 @@
     "diffAddedWord":      "#1E7A5240",
     "diffRemovedWord":    "#7A2E1F40",
 
-    "userMessageBackground":      "#F1ECD8",
-    "userMessageBackgroundHover": "#EAE3C9",
-    "messageActionsBackground":   "#E6DFC2",
-    "bashMessageBackgroundColor": "#E8EEEA",
-    "memoryBackgroundColor":      "#ECE8F4",
+    "userMessageBackground":      "#E0DAB0",
+    "userMessageBackgroundHover": "#D8D2A8",
+    "messageActionsBackground":   "#D8CFA0",
+    "bashMessageBackgroundColor": "#DCE0DC",
+    "memoryBackgroundColor":      "#DCD8EE",
     "selectionBg":                "#C8C0A075",
 
     "rate_limit_fill":    "#2C5E64",
