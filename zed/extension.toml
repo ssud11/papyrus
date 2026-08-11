@@ -1,0 +1,7 @@
+id = "papyrus"
+name = "Papyrus"
+version = "0.1.0"
+schema_version = 1
+authors = ["SS-inkwright"]
+description = "Metallic ink on warm paper — jewel-toned true-black theme, ported from the Papyrus VS Code/Claude Code TUI theme pack."
+repository = "https://github.com/ssud11/papyrus"
